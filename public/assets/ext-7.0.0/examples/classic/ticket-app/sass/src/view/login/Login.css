@@ -1,0 +1,14 @@
+.login .password {
+  margin-bottom: 0;
+}
+
+.login .hint {
+  margin-bottom: 0;
+}
+
+.login .hint .x-form-display-field {
+  height: auto;
+  margin: 0;
+  font-size: 9px;
+}
+/*# sourceMappingURL=Login.css.map */

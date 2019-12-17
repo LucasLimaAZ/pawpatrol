@@ -1,0 +1,32 @@
+.qtip-item > * {
+  padding: 5px 20px;
+}
+
+.qtip-item {
+  display: inline-block;
+  margin-right: 30px;
+  color: #FFF;
+  text-align: center;
+  cursor: default;
+}
+
+.qtip-item.color1 {
+  background-color: #E91E63;
+}
+
+.qtip-item.color2 {
+  background-color: #2196F3;
+}
+
+.qtip-item.color3 {
+  background-color: #FF5722;
+}
+
+.qtip-item.color4 {
+  background-color: #607D8B;
+}
+
+.qtip-item:last-child {
+  margin-right: 0;
+}
+/*# sourceMappingURL=HtmlToolTips.css.map */

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,OAAO;CACjB;;AACD,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,OAAO;CACjB;;AACD,AAAA,OAAO,CAAC;EACJ,KAAK,EAAE,OAAO;CACjB;;AACD,AAAA,MAAM,CAAC;EACH,KAAK,EAAE,OAAO;CACjB;;AAED,AAAA,sBAAsB,CAAC,UAAU,CAAC;EAC9B,WAAW,EAAE,IAAI;CACpB",
+    "sources": [
+        "BigData.scss"
+    ],
+    "names": [],
+    "file": "BigData.css"
+}

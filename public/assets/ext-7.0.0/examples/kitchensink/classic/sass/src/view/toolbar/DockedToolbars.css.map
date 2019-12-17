@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACI,gBADY,CACZ,KAAK,CAAC;EACF,gBAAgB,EAAE,2CAA2C;CAChE;;AAHL,AAKI,gBALY,CAKZ,MAAM,CAAC;EACH,gBAAgB,EAAE,gCAAgC;CACrD;;AAPL,AASI,gBATY,CASZ,MAAM,CAAC;EACH,gBAAgB,EAAE,qCAAqC;CAC1D;;AAXL,AAaI,gBAbY,CAaZ,KAAK,CAAC;EACF,gBAAgB,EAAE,yCAAyC;CAC9D",
+    "sources": [
+        "DockedToolbars.scss"
+    ],
+    "names": [],
+    "file": "DockedToolbars.css"
+}

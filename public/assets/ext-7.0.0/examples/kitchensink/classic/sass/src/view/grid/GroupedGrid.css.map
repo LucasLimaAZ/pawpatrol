@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC;EACP,gBAAgB,EAAE,8BAA8B;CACnD;;AAED,AAAA,iBAAiB,CAAC;EACd,gBAAgB,EAAE,wCAAwC;CAC7D",
+    "sources": [
+        "GroupedGrid.scss"
+    ],
+    "names": [],
+    "file": "GroupedGrid.css"
+}

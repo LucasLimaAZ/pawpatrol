@@ -1,0 +1,16 @@
+.ticket-detail .comments .header {
+  margin-bottom: 5px;
+}
+
+.ticket-detail .comments .created {
+  font-style: italic;
+}
+
+.ticket-detail .comments .user {
+  font-weight: bold;
+}
+
+.ticket-detail .comments .content {
+  margin-bottom: 10px;
+}
+/*# sourceMappingURL=Detail.css.map */

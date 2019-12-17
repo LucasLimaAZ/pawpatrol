@@ -4,8 +4,8 @@
         <a href="javascript:void(0)" id="toggleCachorros" class="list-group-item list-group-item-action bg-light">Cachorros</a>
         
         <div id="cachorrosSubitem" style="display:none;">
-            <a href="#" class="list-group-subitem">Cadastrar</a>
-            <a href="#" class="list-group-subitem">Administrar</a>
+            <a href="/store-dog" class="list-group-subitem">Cadastrar</a>
+            <a href="/dogs" class="list-group-subitem">Administrar</a>
         </div>
 
         <a href="#" class="list-group-item list-group-item-action bg-light">Raças</a>

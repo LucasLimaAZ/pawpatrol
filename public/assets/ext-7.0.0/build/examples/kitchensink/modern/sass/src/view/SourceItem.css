@@ -1,0 +1,6 @@
+.ux-code pre, .ux-code pre > * {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+}
+/*# sourceMappingURL=SourceItem.css.map */

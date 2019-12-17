@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,UAAU,CAAC,YAAY,CAAC;EACpB,UAAU,EAAE,IAAI;CACnB",
+    "sources": [
+        "Checkout.scss"
+    ],
+    "names": [],
+    "file": "Checkout.css"
+}

@@ -26,7 +26,9 @@
             <div class="col-md-12">
                 <label for="race_id">Raça: </label>
                 <select class="form-control" name="race_id">
-                    <option value="1">Pooddle</option>
+                    @foreach($races as $race)
+                    <option value="{{$race->id}}">{{$race->name}}</option>
+                    @endforeach
                 </select>
             </div>
         </div>

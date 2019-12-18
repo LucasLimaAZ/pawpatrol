@@ -14,7 +14,9 @@ class HomeController extends Controller
 
     public function storeDog()
     {
-        return view("store-dog");
+        $races = Race::all();
+
+        return view("store-dog", compact("races"));
     }
 
     public function storeRace()

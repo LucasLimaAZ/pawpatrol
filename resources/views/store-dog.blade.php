@@ -36,11 +36,20 @@
         <div class="row">
             <div class="col-md-10">
                 <label for="vaccines">Vacinas: </label>
-                <input type="text" class="form-control" name="vaccines">
+                <input type="text" class="form-control" id="vaccine">
             </div>
             <div class="col-md-2">
                 <div class="space32"></div>
-                <button type="button" class="btn btn-success">+</button>
+                <button type="button" id="add-vaccine" class="btn btn-success">+</button>
+                <input type="text" name="vaccines" id="vaccines">
+            </div>
+        </div>
+
+        <div class="space16"></div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <ul id="vaccines-list"></ul>
             </div>
         </div>
 

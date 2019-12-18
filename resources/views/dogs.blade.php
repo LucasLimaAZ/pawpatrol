@@ -8,7 +8,7 @@
 <div class="space64"></div>
 <div class="row">
     <div class="col-md-10 offset-md-1">
-        <table id="dogs">
+        <table class="table table-striped" id="dogs">
             <thead>
                 <tr>
                     <th>Nome: </th>
@@ -22,7 +22,7 @@
                 <tr>
                     <td>{{$dog->name}}</td>
                     <td>{{$dog->age}}</td>
-                    <td>{{$dog->race}}</td>
+                    <td>{{$dog->race_name}}</td>
                     <td>{{$dog->vaccines}}</td>
                 </tr>
                 @endforeach

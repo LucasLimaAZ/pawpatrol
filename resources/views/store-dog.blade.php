@@ -38,16 +38,20 @@
                 <label for="vaccines">Vacinas: </label>
                 <input type="text" class="form-control" id="vaccine">
             </div>
-            <div class="col-md-2">
+            <div class="col-md-1">
                 <div class="space32"></div>
                 <button type="button" id="add-vaccine" class="btn btn-success">+</button>
-                <input type="text" name="vaccines" id="vaccines">
+            </div>
+            <div class="col-md-1">
+                <div class="space32"></div>
+                <button type="button" id="remove-vaccine" class="btn btn-danger">-</button>
             </div>
         </div>
 
         <div class="space16"></div>
 
         <div class="row">
+            <input type="hidden" name="vaccines" id="vaccines">
             <div class="col-md-12">
                 <ul id="vaccines-list"></ul>
             </div>
@@ -58,6 +62,14 @@
         <div class="row">
             <div class="col-md-12">
                 <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </div>
+
+        <div class="space32"></div>
+
+        <div style="display:none;" class="success">
+            <div class="alert alert-success">
+                <p>Cadastrado com sucesso!</p>
             </div>
         </div>
 

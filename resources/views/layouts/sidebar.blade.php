@@ -8,7 +8,12 @@
             <a href="/dogs" class="list-group-subitem">Administrar</a>
         </div>
 
-        <a href="#" class="list-group-item list-group-item-action bg-light">Raças</a>
+        <a href="javascript:void(0)" id="toggleRacas" class="list-group-item list-group-item-action bg-light">Raças</a>
+
+        <div id="racasSubitem" style="display:none;">
+            <a href="/store-race" class="list-group-subitem">Cadastrar</a>
+            <a href="/races" class="list-group-subitem">Administrar</a>
+        </div>
         <a href="#" class="list-group-item list-group-item-action bg-light">Registros</a>
     </div>
 </div>

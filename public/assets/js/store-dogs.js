@@ -1,33 +1,45 @@
-$('#dog').submit(() => {
+// FORM SUBMIT
+$("#dog").submit(() => {
     event.preventDefault()
 
-    let dados = $('#dog').serialize()
-    $.post('store-dog', dados, response => {
+    let data = $("#dog").serialize()
+    $.post("store-dog", data, response => {
         console.log(JSON.parse(response))
+    })
+    .done(() => {
+        $("#success").fadeIn(300)
+        $("#dog")[0].reset()
+        vaccines = []
+        $("#vaccines").val("")
+        $("#vaccines-list").html("")
+        window.setTimeout(() => {
+            $("#success").fadeOut(300)
+        }, 1200)
     })
 })
 
+// VACCINES
+
+var vaccines = []
+
 $("#add-vaccine").click(() => {
-    if($("#vaccine").val() != ''){
-        $("#vaccines").val($("#vaccines").val() + $("#vaccine").val() + ';')
+    if($("#vaccine").val() != ""){
+        
+        vaccines.push($("#vaccine").val())
+        $("#vaccines").val(vaccines)
+
         $("#vaccines-list").append(`
-            <a href="javascript:void(0)" onclick="removeVaccine(this)" id="vaccine-item">
-                <li>${$("#vaccine").val()}</li>
-            </a>
+            <li>${$("#vaccine").val()}</li>
         `)
     
-        $("#vaccine").val('')
+        $("#vaccine").val("")
     }
 })
 
-function removeVaccine(obj)
-{
-    let removedVaccine = obj.innerHTML;
-    removedVaccine = removedVaccine.replace("<li>", "")
-    removedVaccine = removedVaccine.replace("</li>", "")
-    removedVaccine = removedVaccine.replace(/ /g,'')
-    removedVaccine = removedVaccine.replace(/\r?\n|\r/g,'')
-    removedVaccine += ";"
+$("#remove-vaccine").click(() => {
+    vaccines.splice(vaccines.length -   1, 1)
 
-    $("#vaccines").val($("#vaccines").val().replace(removedVaccine), "")
-}
+    $("#vaccines").val(vaccines)
+
+    $("#vaccines-list li:last-child").remove()
+})

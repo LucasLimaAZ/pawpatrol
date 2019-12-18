@@ -3,20 +3,20 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Dog;
+use App\Race;
 
-class DogsController extends Controller
+class RacesController extends Controller
 {
-    public function dogs()
+    public function races()
     {
-        $dogs = Dog::getDogs();
-        
-        return view('dogs', compact('dogs'));
+        $races = Race::all();
+
+        return view("races", compact("races"));
     }
 
     public function store(Request $request)
     {
-        Dog::create($request->input());
+        Race::create($request->input());
 
         return json_encode($request->input());
     }

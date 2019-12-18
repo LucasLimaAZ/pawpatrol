@@ -18,7 +18,7 @@ class CreateDogsTable extends Migration
             $table->string('name');
             $table->integer('race_id')->references('id')->on('races');
             $table->string('age');
-            $table->text('vaccines');
+            $table->text('vaccines')->nullable();
             $table->timestamps();
         });
     }

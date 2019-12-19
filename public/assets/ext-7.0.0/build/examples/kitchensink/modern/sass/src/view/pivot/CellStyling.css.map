@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AACI,qBADiB,CACjB,UAAU,CAAC;EACP,WAAW,EAAE,IAAI;CACpB;;AAGL,AACI,qBADiB,CACjB,UAAU,CAAC;EACP,KAAK,EAAE,IAAI;CACd;;AAGL,AACI,kBADc,CACd,UAAU,CAAC;EACP,KAAK,EAAE,KAAK;CACf;;AAGL,AACI,kBADc,CACd,UAAU,CAAC;EACP,KAAK,EAAE,GAAG;CACb",
-    "sources": [
-        "CellStyling.scss"
-    ],
-    "names": [],
-    "file": "CellStyling.css"
-}

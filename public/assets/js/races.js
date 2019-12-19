@@ -33,3 +33,18 @@ $(document).ready(() => {
         }
     })
 })
+
+// DELETE RACE
+function deleteRace(obj)
+{
+    let r = confirm("Você tem certeza de que deseja excluir permanentemente os registros desta raça?")
+    if(r){
+        id = obj.id
+
+        $.get(`delete-race/${id}`)
+        .done(() => {
+            $(`#race-${id}`).fadeOut(300)
+        })
+        .fail("Ocorreu um erro, tente novamente mais tarde.")
+    }
+}

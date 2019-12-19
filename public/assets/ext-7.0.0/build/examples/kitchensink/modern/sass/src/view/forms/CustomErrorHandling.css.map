@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,uBAAuB,CAAC;EACpB,cAAc,EAAE,IAAI;CAKvB;;AAND,AAGI,uBAHmB,AAGlB,WAAW,CAAC;EACT,cAAc,EAAE,CAAC;CACpB",
-    "sources": [
-        "CustomErrorHandling.scss"
-    ],
-    "names": [],
-    "file": "CustomErrorHandling.css"
-}

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AACE,YADU,CACV,IAAI,CAAC;EACH,SAAS,EAAE,GAAG;CACf;;AAGH,AACE,aADW,CACX,IAAI,CAAC;EACH,SAAS,EAAE,IAAI;CAChB",
-    "sources": [
-        "PivotHeatMap.scss"
-    ],
-    "names": [],
-    "file": "PivotHeatMap.css"
-}

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,UAAU,EAAE,cAAc;CAC7B",
-    "sources": [
-        "TreeList.scss"
-    ],
-    "names": [],
-    "file": "TreeList.css"
-}

@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,UAAU,CAAV,gBAAU;EACN,EAAE;IACM,gBAAgB,EAAE,oBAAoB;;EAE9C,IAAI;IACI,UAAU,EAAE,IAAI;;;;AAI5B,AAAA,iBAAiB,CAAC;EACd,cAAc,EAAE,gBAAgB;EAChC,kBAAkB,EAAE,IAAI;CAC3B;;AAED,UAAU,CAAV,gBAAU;EACN,EAAE;IACM,gBAAgB,EAAE,oBAAoB;;EAE9C,IAAI;IACI,UAAU,EAAE,IAAI;;;;AAI5B,AAAA,iBAAiB,CAAC;EACd,cAAc,EAAE,gBAAgB;EAChC,kBAAkB,EAAE,IAAI;CAC3B",
-    "sources": [
-        "Ticker.scss"
-    ],
-    "names": [],
-    "file": "Ticker.css"
-}

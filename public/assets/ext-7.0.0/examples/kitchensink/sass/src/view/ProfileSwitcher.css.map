@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,oBAAoB,CAAC;EACjB,KAAK,EAAE,KAAK;EACZ,SAAS,EAAE,IAAI;EACf,MAAM,EAAE,OAAO;EACf,MAAM,EAAE,MAAM;CACjB",
-    "sources": [
-        "ProfileSwitcher.scss"
-    ],
-    "names": [],
-    "file": "ProfileSwitcher.css"
-}

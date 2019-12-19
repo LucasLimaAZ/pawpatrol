@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,gBAAgB,EAAC,6BAA6B;CACjD;;AACD,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAAC,gCAAgC;CACpD;;AACD,AAAA,OAAO,CAAC;EACJ,gBAAgB,EAAC,gCAAgC;CACpD;;AACD,AAAA,eAAe,CAAC,CAAC,CAAC;EACd,MAAM,EAAE,MAAM;CACjB",
-    "sources": [
-        "ExpanderLockable.scss"
-    ],
-    "names": [],
-    "file": "ExpanderLockable.css"
-}

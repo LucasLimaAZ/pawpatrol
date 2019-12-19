@@ -10,8 +10,10 @@ body {
 }
 
 #sidebar-wrapper .sidebar-heading {
+  font-family: 'Nunito';
+  color: purple !important;
   padding: 0.875rem 1.25rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 #sidebar-wrapper .list-group {
@@ -41,6 +43,10 @@ body {
   }
 }
 
+.toggle-menu {
+  color: purple;
+}
+
 .space16 {
   margin-top: 16px;
 }
@@ -65,6 +71,15 @@ body {
   margin-top: 512px;
 }
 
+.form-control {
+  border: 1px solid purple !important;
+}
+
+.btn-primary {
+  background-color: purple !important;
+  border-color: purple !important;
+}
+
 .main-title {
   font-family: 'Nunito';
   text-align: center;
@@ -77,5 +92,29 @@ body {
   padding: .75rem 1.25rem;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.delete-button {
+  text-align: center;
+  cursor: pointer;
+  color: red;
+  font-size: 20px;
+}
+
+.edit-button {
+  text-align: center;
+  cursor: pointer;
+  color: green;
+  font-size: 20px;
+}
+
+.shadow-box {
+  -webkit-box-shadow: 0px 0px 8px 2px #d2d2d2;
+  box-shadow: 0px 0px 8px 2px #d2d2d2;
+}
+
+.shadow-box form {
+  margin: 3%;
+  padding: 3%;
 }
 /*# sourceMappingURL=main.css.map */

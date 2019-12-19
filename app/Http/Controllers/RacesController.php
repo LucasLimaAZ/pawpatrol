@@ -21,18 +21,33 @@ class RacesController extends Controller
         return json_encode($request->input());
     }
 
+    public function edit($id)
+    {
+        $race = Race::find($id);
+
+        return view("edit-race", compact("race"));
+    }
+
     public function show($id)
     {
         //
     }
 
-    public function update(Request $request, $id)
+    public function update(Request $request)
     {
-        //
+        $race = Race::find($request->id);
+
+        $race->update($request->all());
+        $race->save();
+
+        return json_encode($race);
     }
 
     public function destroy($id)
     {
-        //
+        $race = Race::find($id);
+        $race->delete();
+
+        return json_encode($id);
     }
 }

@@ -3,9 +3,7 @@ $("#dog").submit(() => {
     event.preventDefault()
 
     let data = $("#dog").serialize()
-    $.post("store-dog", data, response => {
-        console.log(JSON.parse(response))
-    })
+    $.post("store-dog", data)
     .done(() => {
         $("#success").fadeIn(300)
         $("#dog")[0].reset()
@@ -19,7 +17,6 @@ $("#dog").submit(() => {
 })
 
 // VACCINES
-
 var vaccines = []
 
 $("#add-vaccine").click(() => {
@@ -37,7 +34,7 @@ $("#add-vaccine").click(() => {
 })
 
 $("#remove-vaccine").click(() => {
-    vaccines.splice(vaccines.length -   1, 1)
+    vaccines.splice(vaccines.length - 1, 1)
 
     $("#vaccines").val(vaccines)
 

@@ -9,7 +9,9 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view("home");
+        $dogs = Dog::all();
+
+        return view("home", compact(""));
     }
 
     public function storeDog()

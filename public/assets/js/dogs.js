@@ -33,3 +33,18 @@ $(document).ready(() => {
         }
     })
 })
+
+// DELETE DOG
+function deleteDog(obj)
+{
+    let r = confirm("Você tem certeza de que deseja excluir permanentemente os registros deste cachorro?")
+    if(r){
+        id = obj.id
+
+        $.get(`delete-dog/${id}`)
+        .done(() => {
+            $(`#dog-${id}`).fadeOut(300)
+        })
+        .fail("Ocorreu um erro, tente novamente mais tarde.")
+    }
+}

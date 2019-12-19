@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AACI,UADM,CACN,EAAE,CAAC;EACC,aAAa,EAAE,IAAI;CAStB;;AAXL,AAIQ,UAJE,CACN,EAAE,CAGE,CAAC,CAAC;EACE,KAAK,EAAE,IAAI;EACX,WAAW,EAAE,IAAI;EACjB,eAAe,EAAE,IAAI;EACrB,WAAW,EAAE,KAAK;EAClB,aAAa,EAAE,cAAc;CAChC",
-    "sources": [
-        "YQL.scss"
-    ],
-    "names": [],
-    "file": "YQL.css"
-}

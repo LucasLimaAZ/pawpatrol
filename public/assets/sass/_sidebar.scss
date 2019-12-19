@@ -1,3 +1,5 @@
+$main-color: purple;
+
 body {
     overflow-x: hidden;
 }
@@ -12,8 +14,10 @@ body {
 }
  
 #sidebar-wrapper .sidebar-heading {
+    font-family: 'Nunito';
+    color: $main-color !important;
     padding: 0.875rem 1.25rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
  
 #sidebar-wrapper .list-group {
@@ -43,5 +47,9 @@ body {
     #wrapper.toggled #sidebar-wrapper {
         margin-left: -15rem;
     }
+}
+
+.toggle-menu{
+    color: $main-color;
 }
  

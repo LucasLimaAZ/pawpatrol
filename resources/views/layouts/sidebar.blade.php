@@ -1,5 +1,5 @@
 <div class="bg-light border-right" id="sidebar-wrapper">
-    <div class="sidebar-heading">PAW PATROL </div>
+    <div class="sidebar-heading"><a href="/">Paw Patrol </a></div>
     <div class="list-group list-group-flush">
         <a href="javascript:void(0)" id="toggleCachorros" class="list-group-item list-group-item-action bg-light">Cachorros</a>
         

@@ -3,7 +3,7 @@
 
     <div class="space32"></div>
 
-    <h1 class="main-title">Cadastrar Cachorro</h1>
+    <h1 class="main-title">Editar Cachorro</h1>
 
     <div class="space32"></div>
 
@@ -12,12 +12,13 @@
             @csrf
             <div class="row">
                 <div class="col-md-8">
+                    <input type="hidden" value="{{$dog->id}}" name="id">
                     <label for="name">Nome: </label>
-                    <input type="text" class="form-control" name="name">
+                    <input type="text" value="{{$dog->name}}" class="form-control" name="name">
                 </div>
                 <div class="col-md-4">
                     <label for="age">Idade: </label>
-                    <input type="text" name="age" class="form-control">
+                    <input type="text" value="{{$dog->age}}" name="age" class="form-control">
                 </div>
             </div>
 
@@ -37,26 +38,9 @@
             <div class="space16"></div>
 
             <div class="row">
-                <div class="col-md-10">
+                <div class="col-md-12">
                     <label for="vaccines">Vacinas: </label>
-                    <input type="text" class="form-control" id="vaccine">
-                </div>
-                <div class="col-md-1">
-                    <div class="space32"></div>
-                    <button type="button" id="add-vaccine" class="btn btn-success">+</button>
-                </div>
-                <div class="col-md-1">
-                    <div class="space32"></div>
-                    <button type="button" id="remove-vaccine" class="btn btn-danger">-</button>
-                </div>
-            </div>
-
-            <div class="space16"></div>
-
-            <div class="row">
-                <input type="hidden" name="vaccines" id="vaccines">
-                <div class="col-md-12">
-                    <ul id="vaccines-list"></ul>
+                    <textarea id="vaccines" name="vaccines" class="form-control">{{$dog->vaccines}}</textarea>
                 </div>
             </div>
 
@@ -64,7 +48,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <button type="submit" class="btn btn-primary">Cadastrar</button>
+                    <button type="submit" class="btn btn-primary">Atualizar</button>
                 </div>
             </div>
 
@@ -72,13 +56,13 @@
 
             <div style="display:none;" id="success">
                 <div class="alert alert-success">
-                    <p>Cadastrado com sucesso!</p>
+                    <p>Atualizado com sucesso!</p>
                 </div>
             </div>
 
         </form>
     </div>
 
-    <script src="{{asset('assets/js/store-dogs.js')}}"></script>
+    <script src="{{asset('assets/js/edit-dogs.js')}}"></script>
 
 @endsection

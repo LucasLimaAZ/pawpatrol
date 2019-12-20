@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Race;
+use App\Dog;
 
 class HomeController extends Controller
 {
@@ -11,7 +12,7 @@ class HomeController extends Controller
     {
         $dogs = Dog::all();
 
-        return view("home", compact(""));
+        return view("home", compact("dogs"));
     }
 
     public function storeDog()

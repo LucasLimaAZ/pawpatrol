@@ -19,6 +19,10 @@ body {
     padding: 0.875rem 1.25rem;
     font-size: 1.5rem;
 }
+
+#sidebar-wrapper .sidebar-heading a{
+    color: $main-color !important;
+}
  
 #sidebar-wrapper .list-group {
     width: 15rem;

@@ -16,6 +16,10 @@ body {
   font-size: 1.5rem;
 }
 
+#sidebar-wrapper .sidebar-heading a {
+  color: purple !important;
+}
+
 #sidebar-wrapper .list-group {
   width: 15rem;
   border-top: 1px solid #dae0e5;

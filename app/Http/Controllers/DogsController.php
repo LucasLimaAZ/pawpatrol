@@ -11,7 +11,7 @@ class DogsController extends Controller
     public function dogs()
     {
         $dogs = Dog::getDogs();
-        
+
         return view('dogs', compact('dogs'));
     }
 
@@ -25,14 +25,16 @@ class DogsController extends Controller
     public function edit($id)
     {
         $races = Race::all();
-        $dog = Dog::find($id);
+        $dog = Dog::findDog($id);
 
         return view("edit-dog", compact("dog", "races"));
     }
 
     public function show($id)
     {
-        //
+        $dog = Dog::findDog($id);
+
+        return view("view-dog", compact("dog"));
     }
 
     public function update(Request $request)

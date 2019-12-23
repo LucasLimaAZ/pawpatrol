@@ -10,8 +10,8 @@ class HomeController extends Controller
 {
     public function index()
     {
-        $dogs = Dog::all();
-
+        $dogs = Dog::getDogs();
+        
         return view("home", compact("dogs"));
     }
 

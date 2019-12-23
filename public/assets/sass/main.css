@@ -121,4 +121,21 @@ body {
   margin: 3%;
   padding: 3%;
 }
+
+.shadow-box-item {
+  -webkit-box-shadow: 0px 0px 7px 2px rgba(210, 210, 210, 0.8);
+  box-shadow: 0px 0px 7px 2px rgba(210, 210, 210, 0.8);
+}
+
+.shadow-box-item:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-box-shadow: 0px 0px 2px 1px rgba(210, 210, 210, 0.8);
+  box-shadow: 0px 0px 2px 1px rgba(210, 210, 210, 0.8);
+}
+
+a {
+  text-decoration: inherit !important;
+  color: inherit !important;
+}
 /*# sourceMappingURL=main.css.map */

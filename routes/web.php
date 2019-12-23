@@ -6,6 +6,7 @@ Route::get("/store-dog", "HomeController@storeDog");
 Route::get("/store-race", "HomeController@storeRace");
 
 Route::get("/dogs", "DogsController@dogs");
+Route::get("/dogs/{dog}", "DogsController@show");
 Route::get("/races", "RacesController@races");
 
 Route::post("/store-dog", "DogsController@store");

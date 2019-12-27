@@ -11,8 +11,8 @@
                 <hr>
                 <p>
                     Idade: {{$dog->age}} <br>
-                    Raça: {{$dog->race_name}} <br>
-                    Descrição: {{$dog->race_description}} <br>
+                    Raça: {{$dog->race->name}} <br>
+                    Descrição: {{$dog->race->description}} <br>
                 </p>
             </div>
         </div>

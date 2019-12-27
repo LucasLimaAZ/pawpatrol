@@ -14,6 +14,6 @@ class Race extends Model
 
     public function dogs()
     {
-        return $this->morphedByMany("App\Dog", "Dogs");
+        return $this->hasMany(Dog::class);
     }
 }

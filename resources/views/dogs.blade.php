@@ -24,7 +24,7 @@
                 <tr id="dog-{{$dog->id}}">
                     <td>{{$dog->name}}</td>
                     <td>{{$dog->age}}</td>
-                    <td>{{$dog->race_name}}</td>
+                    <td>{{$dog->race->name}}</td>
                     <td>{{$dog->vaccines}}</td>
                     <td style="text-align:center;">
                         <span id="{{$dog->id}}" onclick="deleteDog(this)" class="delete-button">

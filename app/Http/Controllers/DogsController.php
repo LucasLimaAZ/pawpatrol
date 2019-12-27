@@ -12,13 +12,8 @@ class DogsController extends Controller
     public function dogs()
     {
         $dogs = Dog::all();
-        foreach($dogs as $dog){
-            print_r($dog);
-        }
 
-        /*$dogs = Dog::getDogs();
-
-        return view('dogs', compact('dogs'));*/
+        return view('dogs', compact('dogs'));
     }
 
     public function store(Request $request)
@@ -40,14 +35,14 @@ class DogsController extends Controller
     public function edit($id)
     {
         $races = Race::all();
-        $dog = Dog::findDog($id);
+        $dog = Dog::find($id);
 
         return view("edit-dog", compact("dog", "races"));
     }
 
     public function show($id)
     {
-        $dog = Dog::findDog($id);
+        $dog = Dog::find($id);
 
         return view("view-dog", compact("dog"));
     }

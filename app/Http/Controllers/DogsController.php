@@ -5,19 +5,34 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Dog;
 use App\Race;
+use App\Vaccine;
 
 class DogsController extends Controller
 {
     public function dogs()
     {
-        $dogs = Dog::getDogs();
+        $dogs = Dog::all();
+        foreach($dogs as $dog){
+            print_r($dog);
+        }
 
-        return view('dogs', compact('dogs'));
+        /*$dogs = Dog::getDogs();
+
+        return view('dogs', compact('dogs'));*/
     }
 
     public function store(Request $request)
     {
-        Dog::create($request->input());
+        $obj = Dog::create($request->input());
+        $dog_id = $obj->id;
+
+        $vaccines = explode(",", $request->vaccines);
+
+        foreach($vaccines as $vaccine){
+            $store_vacine["name"] = $vaccine;
+            $store_vacine["dog_id"] = $dog_id;
+            Vaccine::create($store_vacine);
+        }
 
         return json_encode($request->input());
     }

@@ -14,6 +14,9 @@ $("#dog").submit(() => {
             $("#success").fadeOut(300)
         }, 1200)
     })
+    .fail(() => {
+        alert("Ocorreu um erro, tente novamente mais tarde.")
+    })
 })
 
 // VACCINES

@@ -11,4 +11,9 @@ class Race extends Model
     protected $fillable = [
         'name', 'description'
     ];
+
+    public function dogs()
+    {
+        return $this->morphedByMany("App\Dog", "Dogs");
+    }
 }
